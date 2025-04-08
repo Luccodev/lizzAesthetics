@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slim and Vital Aesthetics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+    }
+    header {
+      background-color: #f4bfbf;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #fff0f0;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0.5rem;
+      color: #b33c3c;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #fff;
+    }
+    .section {
+      padding: 4rem 1rem;
+      background-color: #fff;
+      border-top: 5px solid #f4bfbf;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #b33c3c;
+    }
+    .services, .testimonials, .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+    .service, .testimonial, .gallery-images img {
+      background: #fff0f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .gallery-images img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .booking {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: #fff0f0;
+      border-top: 5px solid #f4bfbf;
+    }
+    .booking form {
+      max-width: 400px;
+      margin: 2rem auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .booking input, .booking select, .booking textarea {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .booking button {
+      background-color: #b33c3c;
+      color: #fff;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #f4bfbf;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 0;
+    }
+    .price {
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: #b33c3c;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #25D366;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5b;
+    }
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .services, .testimonials, .gallery-images {
+        grid-template-columns: 1fr;
+      }
+      .hero, .section, .booking, footer {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Slim and Vital Aesthetics</h1>
+    <p>Radiate Confidence. Revitalize Your Glow.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#booking">Book</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Slim and Vital Aesthetics</h2>
+    <p>Experience personalized treatments designed to enhance your natural beauty and well-being.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>At Slim and Vital Aesthetics, our mission is to provide world-class aesthetic and wellness services in a tranquil, professional environment. With a team of highly skilled therapists and state-of-the-art equipment, we aim to bring out the healthiest, most confident version of you.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Facial Treatments</h3>
+        <p>Customized facials to cleanse, hydrate, and restore your skin.</p>
+        <span class="price">From R350</span>
+      </div>
+      <div class="service">
+        <h3>IV Drip Therapy</h3>
+        <p>Boost your vitality and immunity with our nutrient-rich IV drips.</p>
+        <span class="price">From R650</span>
+      </div>
+      <div class="service">
+        <h3>Skin Treatments</h3>
+        <p>From microneedling to chemical peels—tailored to your skin's needs.</p>
+        <span class="price">From R500</span>
+      </div>
+      <div class="service">
+        <h3>Slimming</h3>
+        <p>Non-invasive body sculpting and fat reduction services.</p>
+        <span class="price">From R700</span>
+      </div>
+      <div class="service">
+        <h3>Waxing</h3>
+        <p>Smooth, long-lasting results with our expert waxing services.</p>
+        <span class="price">From R120</span>
+      </div>
+      <div class="service">
+        <h3>Massage Treatments</h3>
+        <p>Relax, release, and rejuvenate with our full-body massage therapies.</p>
+        <span class="price">From R400</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Our Gallery</h2>
+    <div class="gallery-images">
+      <img src="images/facial.jpg" alt="Facial Treatment" loading="lazy" />
+      <img src="images/Skin Treatment.jpg" alt="Skin Treatment" loading="lazy" />
+      <img src="images/slimming.jpg" alt="Slimming Treatment" loading="lazy" />
+      <img src="images/massage.jpg" alt="Massage Treatment" loading="lazy" />
+      <img src="images/waxing.jpg" alt="Waxing Treatment" loading="lazy" />
+      <img src="images/ivdrip.jpg" alt="IV Drip Therapy" loading="lazy" />
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Book Your Appointment Online</h2>
+    <p>Choose a time that works for you and reserve your session in seconds.</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <select name="service" required>
+        <option value="">Select a Service</option>
+        <option value="facial">Facial Treatments</option>
+        <option value="iv drip">IV Drip Therapy</option>
+        <option value="skin">Skin Treatments</option>
+        <option value="slimming">Slimming</option>
+        <option value="waxing">Waxing</option>
+        <option value="massage">Massage Treatments</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="notes" placeholder="Additional Notes (optional)"></textarea>
+      <button type="submit">Book Appointment</button>
+    </form>
+    <a href="https://wa.me/27726370130" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+      Book via WhatsApp
+    </a>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h2>Client Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"My facial treatment was amazing! I left feeling refreshed and glowing."</p>
+        <strong>- Lindiwe M.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"The IV drip made a huge difference in my energy levels. Highly recommend!"</p>
+        <strong>- Thabo K.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Best waxing experience I've ever had. So smooth and painless!"</p>
+        <strong>- Naledi S.</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p><strong>Visit Us:</strong> 123 Wellness Avenue, Aesthetic City, ZA</p>
+    <p><strong>Call:</strong> +27 12 345 6789 | <strong>Email:</strong> info@slimandvital.co.za</p>
+    <p>&copy; 2025 Slim and Vital Aesthetics</p>
+  </footer>
+</body>
+</html>
