@@ -26,6 +26,9 @@
       background-color: #fff0f0;
       padding: 1rem;
       text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     nav a {
       margin: 0.5rem;
@@ -84,6 +87,8 @@
       border-radius: 5px;
       border: 1px solid #ccc;
       font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
     }
     .booking button {
       background-color: #b33c3c;
@@ -121,10 +126,9 @@
       background-color: #1ebe5b;
     }
     @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+      nav a {
+        flex: 1 1 100%;
+        margin: 0.25rem 0;
       }
       .services, .testimonials, .gallery-images {
         grid-template-columns: 1fr;
@@ -132,10 +136,15 @@
       .hero, .section, .booking, footer {
         padding: 2rem 1rem;
       }
+      .booking form {
+        width: 100%;
+        padding: 0 1rem;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Body content remains the same -->
   <header>
     <h1>Slim and Vital Aesthetics</h1>
     <p>Radiate Confidence. Revitalize Your Glow.</p>
@@ -212,7 +221,7 @@
   <section id="booking" class="booking">
     <h2>Book Your Appointment Online</h2>
     <p>Choose a time that works for you and reserve your session in seconds.</p>
-    <form action="#" method="post">
+    <form action="https://formspree.io/f/mgvapqbl" method="post">
       <input type="text" name="name" placeholder="Your Full Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="tel" name="phone" placeholder="Your Phone Number" required>
